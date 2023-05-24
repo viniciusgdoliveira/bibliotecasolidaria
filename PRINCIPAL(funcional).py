@@ -187,8 +187,8 @@ def atualizar():
                 widget.destroy()
 
             mostrar()
-        botao_confirmar = Button(frameMeio, command=update, text="Confirmar".upper(), width=13, height=1, bg=co2, fg=co1,font=('ivy 8 bold'),relief=RAISED, overrelief=RIDGE)
-        botao_confirmar.place(x=330, y=185)
+        botao_confirmar = Button(frameMeio, command=update, text="Confirmar".upper(), width=13, height=1, bg=co2, fg=co1,font=('ivy 8 bold bold'),relief=RAISED, overrelief=RIDGE)
+        botao_confirmar.place(x=730, y=250)
  
 
     except IndexError:
@@ -232,83 +232,83 @@ def ver_imagem():
 
 l_material = Label(frameMeio, text="Material", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
 l_material.place(x=10, y=10)
-e_material = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_material.place(x=130, y=11)
+e_material = Entry(frameMeio, width=34, justify='left',relief="solid")
+e_material.place(x=180, y=11)
 
 l_codigo_titulo = Label(frameMeio, text="Código Título", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
 l_codigo_titulo.place(x=10, y=40)
-e_codigo_titulo = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_codigo_titulo.place(x=130, y=41)
+e_codigo_titulo = Entry(frameMeio, width=34, justify='left',relief="solid")
+e_codigo_titulo.place(x=180, y=41)
 
 l_titulo = Label(frameMeio, text="Título", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
 l_titulo.place(x=10, y=70)
-e_titulo = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_titulo.place(x=130, y=71)
+e_titulo = Entry(frameMeio, width=34, justify='left',relief="solid")
+e_titulo.place(x=180, y=71)
 
 l_numero_de_chamada = Label(frameMeio, text="Número de Chamada", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
 l_numero_de_chamada.place(x=10, y=100)
-e_numero_de_chamada = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_numero_de_chamada.place(x=130, y=101)
+e_numero_de_chamada = Entry(frameMeio, width=34, justify='left',relief="solid")
+e_numero_de_chamada.place(x=180, y=101)
 
 l_data_publicacao = Label(frameMeio, text="Data Publicação", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
 l_data_publicacao.place(x=10, y=130)
-e_data_publicacao = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_data_publicacao.place(x=130, y=131)
+e_data_publicacao = Entry(frameMeio, width=34, justify='left',relief="solid")
+e_data_publicacao.place(x=180, y=131)
 
 l_autor = Label(frameMeio, text="Autor", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
-l_autor.place(x=450, y=10)
-e_autor = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_autor.place(x=600, y=11)
+l_autor.place(x=480, y=10)
+e_autor = Entry(frameMeio, width=39, justify='left',relief="solid")
+e_autor.place(x=650, y=11)
 
 l_forma_aquisicao = Label(frameMeio, text="Forma de Aquisição", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
-l_forma_aquisicao.place(x=450, y=40)
-e_forma_aquisicao = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_forma_aquisicao.place(x=600, y=41)
+l_forma_aquisicao.place(x=480, y=40)
+e_forma_aquisicao = Entry(frameMeio, width=39, justify='left',relief="solid")
+e_forma_aquisicao.place(x=650, y=41)
 
 l_data_aquisicao = Label(frameMeio, text="Data de Aquisição", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
-l_data_aquisicao.place(x=450, y=70)
-e_data_aquisicao = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_data_aquisicao.place(x=600, y=71)
+l_data_aquisicao.place(x=480, y=70)
+e_data_aquisicao = Entry(frameMeio, width=39, justify='left',relief="solid")
+e_data_aquisicao.place(x=650, y=71)
 
 l_fornecedor = Label(frameMeio, text="Fornecedor", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
-l_fornecedor.place(x=450, y=100)
-e_fornecedor = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_fornecedor.place(x=600, y=101)
+l_fornecedor.place(x=480, y=100)
+e_fornecedor = Entry(frameMeio, width=39, justify='left',relief="solid")
+e_fornecedor.place(x=650, y=101)
 
 l_preco = Label(frameMeio, text="Preço", height=1,anchor=NW, font=('Ivy 10 bold'), bg=co1, fg=co4)
-l_preco.place(x=450, y=130)
-e_preco = Entry(frameMeio, width=30, justify='left',relief="solid")
-e_preco.place(x=600, y=131)
+l_preco.place(x=480, y=130)
+e_preco = Entry(frameMeio, width=39, justify='left',relief="solid")
+e_preco.place(x=650, y=131)
 
 # Botao Inserir
 img_add  = Image.open(r'images\add.png')
-img_add = img_add.resize((20, 20))
+img_add = img_add.resize((40, 40))
 img_add = ImageTk.PhotoImage(img_add)
-botao_inserir = Button(frameMeio, command=inserir,image=img_add, compound=LEFT, anchor=NW, text="   Adicionar".upper(), width=95, overrelief=RIDGE,  font=('ivy 8'),bg=co1, fg=co0 )
-botao_inserir.place(x=330, y=10)
+botao_inserir = Button(frameMeio, command=inserir,image=img_add, compound=LEFT, anchor=NW, text="    Adicionar".upper(), width=150, overrelief=RIDGE,  font=('ivy 8 bold'),bg=co1, fg=co0 )
+botao_inserir.place(x=10, y=200)
 
 
 # Botao Atualizar
 img_update  = Image.open(r'images\update.png')
-img_update = img_update.resize((20, 20))
+img_update = img_update.resize((40, 40))
 img_update = ImageTk.PhotoImage(img_update)
-botao_atualizar = Button(frameMeio, command=atualizar,image=img_update, compound=LEFT, anchor=NW, text="   Atualizar".upper(), width=95, overrelief=RIDGE,  font=('ivy 8'),bg=co1, fg=co0 )
-botao_atualizar.place(x=330, y=50)
+botao_ver = Button(frameMeio, command=atualizar,image=img_update, compound=LEFT, anchor=NW, text="    Atualizar".upper(), width=150, overrelief=RIDGE,  font=('ivy 8 bold'),bg=co1, fg=co0 )
+botao_ver.place(x=730, y=200)
 
 
 # Botao Deletar
 img_delete  = Image.open(r'images\delete.png')
-img_delete = img_delete.resize((20, 20))
+img_delete = img_delete.resize((40, 40))
 img_delete = ImageTk.PhotoImage(img_delete)
-botao_deletar = Button(frameMeio, command=deletar,image=img_delete, compound=LEFT, anchor=NW, text="   Deletar".upper(), width=95, overrelief=RIDGE,  font=('ivy 8'),bg=co1, fg=co0 )
-botao_deletar.place(x=330, y=90)
+botao_deletar = Button(frameMeio, command=deletar,image=img_delete, compound=LEFT, anchor=NW, text="    Deletar".upper(), width=150, overrelief=RIDGE,  font=('ivy 8 bold'),bg=co1, fg=co0 )
+botao_deletar.place(x=230, y=200)
 
 # Botao pesquisar Item
 img_item  = Image.open(r'images\pesquisa.png')
-img_item = img_item.resize((20, 20))
+img_item = img_item.resize((40, 40))
 img_item = ImageTk.PhotoImage(img_item)
-botao_ver = Button(frameMeio, command=ver_imagem,image=img_item, compound=LEFT, anchor=NW, text="   Pesquisar item".upper(), width=95, overrelief=RIDGE,  font=('ivy 8'),bg=co1, fg=co0 )
-botao_ver.place(x=330, y=130)
+botao_ver = Button(frameMeio, command=ver_imagem,image=img_item, compound=LEFT, anchor=NW, text="  Pesquisar Autor".upper(), width=150, overrelief=RIDGE,  font=('ivy 8 bold'),bg=co1, fg=co0 )
+botao_ver.place(x=480, y=200)
 
 
 ################# frame tree ####################
