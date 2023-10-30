@@ -1,3 +1,6 @@
+Biblioteca Solidária Project: Created a Python-based program with SQL integration, facilitating the donation of unused books at Faculdade Cesusc.
+
+
 # bibliotecasolidaria
 Biblioteca Solidária CESUSC
 
@@ -12,3 +15,4 @@ itertools
 pillow
 tkcalendar
 tkinter
+
